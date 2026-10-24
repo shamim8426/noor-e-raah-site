@@ -1,0 +1,15 @@
+:root { --bg: #fbfaf7; --fg: #1f2328; --muted: #5b6168; --accent: #0f6e5c; --line: #e4e1da; }
+@media (prefers-color-scheme: dark) { :root { --bg: #15181c; --fg: #e8e6e1; --muted: #a3a8ae; --accent: #5cc7ae; --line: #2b3036; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", sans-serif; }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 28px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+header .brand { font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--fg); }
+nav { margin-top: 8px; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a, main a, footer a { color: var(--accent); }
+main { padding-top: 20px; padding-bottom: 32px; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 0.4em 0; }
+h2 { font-size: 1.2rem; margin-top: 1.8em; }
+.muted { color: var(--muted); font-size: 0.92rem; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+footer { border-top: 1px solid var(--line); padding-top: 14px; padding-bottom: 28px; color: var(--muted); font-size: 0.9rem; }
